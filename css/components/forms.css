@@ -1,0 +1,150 @@
+.search-form {
+  display: flex;
+
+  gap: 1rem;
+
+  margin-top: 2rem;
+
+  flex-wrap: wrap;
+}
+
+.search-input {
+  flex: 1;
+
+  min-width: 240px;
+
+  background: rgba(255, 255, 255, 0.06);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  color: var(--color-text);
+
+  padding: 1rem 1.2rem;
+
+  border-radius: var(--radius-full);
+
+  backdrop-filter: blur(10px);
+
+  transition:
+    border-color var(--transition-medium),
+    background var(--transition-medium),
+    box-shadow var(--transition-medium);
+}
+
+.search-input::placeholder {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.search-input:focus {
+  outline: none;
+
+  border-color: var(--color-gold);
+
+  background: rgba(255, 255, 255, 0.08);
+
+  box-shadow: 0 0 0 4px rgba(200, 169, 107, 0.12);
+}
+
+/* =========================
+   HERO SEARCH BOX
+========================= */
+
+.hero-search-box {
+  display: flex;
+  align-items: flex-end;
+
+  gap: 1rem;
+
+  margin-top: 2rem;
+
+  background: rgba(12, 12, 14, 0.92);
+
+  padding: 1rem;
+
+  border-radius: var(--radius-md);
+
+  border: 1px solid rgba(255, 255, 255, 0.05);
+
+  backdrop-filter: blur(20px);
+
+  box-shadow: var(--shadow-soft);
+}
+
+.search-group {
+  flex: 1;
+}
+
+.search-group label {
+  display: block;
+
+  margin-bottom: 0.5rem;
+
+  color: var(--color-gold);
+
+  text-transform: uppercase;
+
+  font-size: 0.7rem;
+
+  letter-spacing: 1px;
+}
+
+.search-group input {
+  width: 100%;
+
+  background: #0f0f10;
+
+  border: 1px solid rgba(255, 255, 255, 0.05);
+
+  color: var(--color-text);
+
+  padding: 0.9rem 1rem;
+
+  border-radius: 10px;
+
+  transition:
+    border-color var(--transition-medium),
+    background var(--transition-medium),
+    box-shadow var(--transition-medium);
+}
+
+.search-group input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.search-group input:focus {
+  outline: none;
+
+  border-color: var(--color-gold);
+
+  background: rgba(255, 255, 255, 0.03);
+
+  box-shadow: 0 0 0 4px rgba(200, 169, 107, 0.08);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+  .search-form {
+    flex-direction: column;
+  }
+
+  .search-input {
+    width: 100%;
+  }
+
+  .hero-search-box {
+    flex-direction: column;
+
+    align-items: stretch;
+  }
+
+  .search-group {
+    width: 100%;
+  }
+
+  .hero-search-box .btn {
+    width: 100%;
+  }
+}
