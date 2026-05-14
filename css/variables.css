@@ -1,0 +1,44 @@
+:root {
+  /* COLORS */
+  --color-background: #0f0f10;
+  --color-surface: #17181c;
+  --color-surface-light: #202127;
+  --color-border: rgba(255, 255, 255, 0.08);
+
+  --color-text: #f5f1ea;
+  --color-text-muted: #b8b2a8;
+
+  --color-gold: #c8a96b;
+  --color-gold-hover: #e0bc77;
+
+  --color-danger: #d66b6b;
+  --color-success: #7abf93;
+
+  /* TYPOGRAPHY */
+  --font-heading: "Cormorant Garamond", serif;
+  --font-body: "Inter", sans-serif;
+
+  /* SPACING */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 0.75rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 4rem;
+
+  /* RADIUS */
+  --radius-sm: 10px;
+  --radius-md: 18px;
+  --radius-lg: 28px;
+
+  /* SHADOWS */
+  --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.25);
+  --shadow-luxury: 0 20px 60px rgba(0, 0, 0, 0.4);
+
+  /* TRANSITIONS */
+  --transition-fast: 0.2s ease;
+  --transition-medium: 0.3s ease;
+
+  /* CONTAINER */
+  --container-width: 1280px;
+}

@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap");
+
+@import url("./variables.css");
+
+@import url("./components/navbar.css");
+@import url("./components/cards.css");
+@import url("./components/forms.css");
+@import url("./components/stats.css");
+@import url("./components/footer.css");
+@import url("./components/buttons.css");
+
+/* =========================
+   GLOBAL RESET
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-background);
+
+  color: var(--color-text);
+
+  font-family: var(--font-body);
+
+  min-height: 100vh;
+
+  line-height: 1.6;
+
+  overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+/* =========================
+   LAYOUT
+========================= */
+
+.container {
+  width: min(100% - 2rem, var(--container-width));
+
+  margin-inline: auto;
+}
+
+.section {
+  padding: 5rem 0;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  gap: 2rem;
+
+  margin-bottom: 3rem;
+}
+
+.section-kicker {
+  color: var(--color-gold);
+
+  text-transform: uppercase;
+
+  letter-spacing: 2px;
+
+  margin-bottom: 0.5rem;
+
+  font-size: 0.75rem;
+}
+
+.section-title {
+  font-family: var(--font-heading);
+
+  font-size: clamp(2.5rem, 5vw, 4rem);
+
+  line-height: 1;
+
+  margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+  color: var(--color-text-muted);
+
+  max-width: 650px;
+
+  line-height: 1.7;
+}
+
+.view-all-link {
+  color: var(--color-gold);
+
+  text-decoration: none;
+
+  transition: opacity var(--transition-fast);
+}
+
+.view-all-link:hover {
+  opacity: 0.75;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  position: relative;
+
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      to right,
+      rgba(15, 15, 16, 0.92),
+      rgba(15, 15, 16, 0.45)
+    ),
+    url("https://i.postimg.cc/Mp0MTvkW/Chat-GPT-Image-Apr-27-2026-02-41-00-PM.webp")
+      center/cover;
+
+
+  background-position: center;
+
+  background-size: 100%;
+
+  background-repeat: no-repeat;
+
+  z-index: -2;
+}
+
+.hero::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      to top,
+      var(--color-background),
+      transparent 20%
+    );
+
+  z-index: -1;
+}
+
+
+.hero-content {
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 700px;
+
+  padding-top: 8rem;
+
+  padding-left: 2rem;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  background: rgba(200, 169, 107, 0.12);
+
+  border: 1px solid rgba(200, 169, 107, 0.2);
+
+  color: var(--color-gold);
+
+  padding: 0.5rem 1rem;
+
+  border-radius: var(--radius-full);
+
+  margin-bottom: 1.5rem;
+
+  font-size: 0.75rem;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1px;
+
+  backdrop-filter: blur(10px);
+}
+
+.hero-title {
+  font-family: var(--font-heading);
+
+  font-size: clamp(4rem, 10vw, 7rem);
+
+  line-height: 0.95;
+
+  margin-bottom: 1.5rem;
+}
+
+.hero-description {
+  color: var(--color-text-muted);
+
+  font-size: 1.1rem;
+
+  max-width: 600px;
+
+  line-height: 1.8;
+
+  margin-bottom: 2rem;
+}
+
+/* =========================
+   FEATURED SECTION
+========================= */
+
+.featured-section {
+  position: relative;
+
+  z-index: 2;
+}
+
+.featured-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(320px, 1fr));
+
+  gap: 2rem;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 992px) {
+  .section-heading {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-background-text {
+    font-size: 10rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 90vh;
+  }
+
+  .hero-background-text {
+    top: 6rem;
+
+    left: 1rem;
+
+    font-size: 5rem;
+  }
+
+  .hero-content {
+    padding-top: 7rem;
+  }
+
+  .hero-title {
+    font-size: 4rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .section {
+    padding: 4rem 0;
+  }
+
+  .featured-grid {
+    grid-template-columns: 1fr;
+  }
+}
