@@ -3,135 +3,90 @@
 
 <head>
     <meta charset="UTF-8" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Holidayze | Luxury Venue Booking</title>
 
-    <meta name="description" content="Discover cinematic luxury stays and unforgettable destinations with Holidayze." />
+    <meta name="description"
+        content="Discover cinematic luxury stays and unforgettable destinations with Holidayze." />
 
     <!-- CSS -->
     <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
 <body>
-    <!-- =========================
-         HEADER
-    ========================== -->
 
+    <!-- HEADER -->
     <header class="site-header">
-        <div class="container navbar">
+        <div class="navbar">
 
-            <!-- LOGO -->
             <a href="index.html" class="logo">
                 HOLIDAYZE
             </a>
 
-            <!-- NAVIGATION -->
             <nav>
                 <ul class="nav-links">
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-
-                    <li>
-                        <a href="venues.html">Venues</a>
-                    </li>
-
-                    <li>
-                        <a href="#">Destinations</a>
-                    </li>
-
-                    <li>
-                        <a href="#">About</a>
-                    </li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="venues.html">Venues</a></li>
+                    <li><a href="#">Destinations</a></li>
+                    <li><a href="#">About</a></li>
                 </ul>
             </nav>
 
-            <!-- ACTIONS -->
             <div class="nav-actions">
-                <a href="login.html" class="nav-login">
-                    Login
-                </a>
-
-                <a href="register.html" class="btn btn-primary">
-                    Register
-                </a>
+                <a href="login.html" class="btn btn-outline">Log in</a>
+                <a href="register.html" class="btn btn-primary">Register</a>
             </div>
+
         </div>
     </header>
 
-    <!-- =========================
-         MAIN
-    ========================== -->
-
+    <!-- MAIN -->
     <main>
-        <!-- =========================
-           HERO
-      ========================== -->
 
+        <!-- HERO -->
         <section class="hero">
-
             <div class="container hero-content">
-                <!-- BADGE -->
+
                 <div class="hero-badge">
                     ✦ Exclusive Venues Worldwide
                 </div>
 
-                <!-- TITLE -->
                 <h1 class="hero-title">
-                    Escape Into
-                    <br />
+                    Escape Into <br />
                     Something Beautiful
                 </h1>
 
-                <!-- DESCRIPTION -->
                 <p class="hero-description">
                     Discover curated luxury venues designed for discerning
                     travellers seeking unforgettable escapes around the world.
                 </p>
 
-                <!-- SEARCH -->
                 <form class="hero-search-box">
-                    <!-- LOCATION -->
                     <div class="search-group">
-                        <label for="location">
-                            Where
-                        </label>
-
+                        <label for="location">Where</label>
                         <input type="text" id="location" placeholder="City or venue name..." />
                     </div>
 
-                    <!-- DATES -->
                     <div class="search-group">
-                        <label for="dates">
-                            Dates
-                        </label>
-
+                        <label for="dates">Dates</label>
                         <input type="text" id="dates" placeholder="Select dates" />
                     </div>
 
-                    <!-- GUESTS -->
                     <div class="search-group">
-                        <label for="guests">
-                            Guests
-                        </label>
-
+                        <label for="guests">Guests</label>
                         <input type="text" id="guests" placeholder="2 Guests" />
                     </div>
 
-                    <!-- BUTTON -->
                     <button type="submit" class="btn btn-primary">
                         Search
                     </button>
                 </form>
+
             </div>
         </section>
 
-        <!-- =========================
-           STATS
-      ========================== -->
-
+        <!-- STATS -->
         <section class="stats-section">
             <div class="container stats-grid">
                 <article class="stat-card">
@@ -156,18 +111,13 @@
             </div>
         </section>
 
-        <!-- =========================
-           FEATURED VENUES
-      ========================== -->
-
+        <!-- FEATURED VENUES -->
         <section class="section featured-section">
             <div class="container">
-                <!-- SECTION HEADER -->
+
                 <div class="section-heading">
                     <div>
-                        <p class="section-kicker">
-                            ✦ Hand-picked
-                        </p>
+                        <p class="section-kicker">✦ Hand-picked</p>
 
                         <h2 class="section-title">
                             Featured Venues
@@ -184,313 +134,75 @@
                     </a>
                 </div>
 
-                <!-- VENUE GRID -->
-                <div class="featured-grid">
-                    <!-- CARD 1 -->
-                    <article class="venue-card">
-                        <div class="venue-badge">
-                            ✦ Top Pick
-                        </div>
+                <div id="featured-container" class="featured-grid"></div>
 
-                        <div class="venue-image">
-                            <img src="https://i.postimg.cc/GmnTdvf3/Chat-GPT-Image-Apr-27-2026-02-01-03-PM.webp"
-                                alt="The Amber Pavilion luxury villa in Santorini" />
-                        </div>
-
-                        <div class="venue-content">
-                            <h3 class="venue-title">
-                                The Amber Pavilion
-                                <span>★ 4.9</span>
-                            </h3>
-
-                            <p class="venue-location">
-                                📍 Santorini, Greece
-                            </p>
-
-                            <div class="venue-footer">
-                                <p class="venue-price">
-                                    $480 <span>/ night</span>
-                                </p>
-
-                                <div class="venue-tags">
-                                    <span>Pool</span>
-                                    <span>Dining</span>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- CARD 2 -->
-                    <article class="venue-card">
-                        <div class="venue-badge new">
-                            ✦ New
-                        </div>
-
-                        <div class="venue-image">
-                            <img src="https://i.postimg.cc/cL7gHrqW/Chat-GPT-Image-Apr-27-2026-04-32-42-PM.webp"
-                                alt="Black Pine Estate luxury forest retreat" />
-                        </div>
-
-                        <div class="venue-content">
-                            <h3 class="venue-title">
-                                Black Pine Estate
-                                <span>★ 4.8</span>
-                            </h3>
-
-                            <p class="venue-location">
-                                📍 Kyoto, Japan
-                            </p>
-
-                            <div class="venue-footer">
-                                <p class="venue-price">
-                                    $320 <span>/ night</span>
-                                </p>
-
-                                <div class="venue-tags">
-                                    <span>Spa</span>
-                                    <span>Tea</span>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- CARD 3 -->
-                    <article class="venue-card">
-                        <div class="venue-badge">
-                            ✦ Featured
-                        </div>
-
-                        <div class="venue-image">
-                            <img src="https://i.postimg.cc/nhf9pqWh/Chat-GPT-Image-Apr-27-2026-02-21-02-PM.webp"
-                                alt="Copper Cliffs Villa overlooking the Amalfi Coast" />
-                        </div>
-
-                        <div class="venue-content">
-                            <h3 class="venue-title">
-                                Copper Cliffs Villa
-                                <span>★ 4.9</span>
-                            </h3>
-
-                            <p class="venue-location">
-                                📍 Amalfi Coast, Italy
-                            </p>
-
-                            <div class="venue-footer">
-                                <p class="venue-price">
-                                    $610 <span>/ night</span>
-                                </p>
-
-                                <div class="venue-tags">
-                                    <span>View</span>
-                                    <span>Boat</span>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- CARD 4 -->
-                    <article class="venue-card">
-                        <div class="venue-image">
-                            <img src="https://i.postimg.cc/W1cqT0y4/Chat-GPT-Image-Apr-27-2026-02-24-38-PM.webp"
-                                alt="The Forest Haus in the Black Forest" />
-                        </div>
-
-                        <div class="venue-content">
-                            <h3 class="venue-title">
-                                The Forest Haus
-                                <span>★ 4.7</span>
-                            </h3>
-
-                            <p class="venue-location">
-                                📍 Black Forest, Germany
-                            </p>
-
-                            <div class="venue-footer">
-                                <p class="venue-price">
-                                    $240 <span>/ night</span>
-                                </p>
-
-                                <div class="venue-tags">
-                                    <span>Fire</span>
-                                    <span>Nature</span>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- CARD 5 -->
-                    <article class="venue-card">
-                        <div class="venue-badge new">
-                            ✦ Prestige
-                        </div>
-
-                        <div class="venue-image">
-                            <img src="https://i.postimg.cc/kgN64Brm/Chat-GPT-Image-Apr-27-2026-04-24-13-PM.webp"
-                                alt="Obsidian Penthouse with a beautiful view over Dubai" />
-                        </div>
-
-                        <div class="venue-content">
-                            <h3 class="venue-title">
-                                Obsidian Penthouse
-                                <span>★ 5.0</span>
-                            </h3>
-
-                            <p class="venue-location">
-                                📍 Dubai, UAE
-                            </p>
-
-                            <div class="venue-footer">
-                                <p class="venue-price">
-                                    $920 <span>/ night</span>
-                                </p>
-
-                                <div class="venue-tags">
-                                    <span>View</span>
-                                    <span>Butler</span>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- CARD 6 -->
-                    <article class="venue-card">
-                        <div class="venue-image">
-                            <img src="https://i.postimg.cc/525Y06cM/Chat-GPT-Image-Apr-27-2026-04-14-01-PM.webp"
-                                alt="Tide House with an Ocean view" />
-                        </div>
-
-                        <div class="venue-content">
-                            <h3 class="venue-title">
-                                Tide House
-                                <span>★ 4.9</span>
-                            </h3>
-
-                            <p class="venue-location">
-                                📍 Maldives
-                            </p>
-
-                            <div class="venue-footer">
-                                <p class="venue-price">
-                                    $750 <span>/ night</span>
-                                </p>
-
-                                <div class="venue-tags">
-                                    <span>Dive</span>
-                                    <span>Beach</span>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                </div>
             </div>
         </section>
+
     </main>
 
-    <!-- =========================
-         FOOTER
-    ========================== -->
-
+    <!-- FOOTER -->
     <footer class="site-footer">
         <div class="container">
-            <!-- FOOTER GRID -->
+
             <div class="footer-grid">
-                <!-- BRAND -->
+
                 <div class="footer-brand">
                     <h2>HOLIDAYZE</h2>
-
                     <p>
                         Crafting extraordinary stays for discerning
                         travellers since 2018. Every venue tells a story
-                        — find yours.
+                        - find yours.
                     </p>
                 </div>
 
-                <!-- EXPLORE -->
                 <div class="footer-column">
                     <h3>Explore</h3>
-
                     <ul>
-                        <li>
-                            <a href="#">All Venues</a>
-                        </li>
-
-                        <li>
-                            <a href="#">Destinations</a>
-                        </li>
-
-                        <li>
-                            <a href="#">Luxury Collection</a>
-                        </li>
-
-                        <li>
-                            <a href="#">Last Minute</a>
-                        </li>
+                        <li><a href="#">All Venues</a></li>
+                        <li><a href="#">Destinations</a></li>
+                        <li><a href="#">Luxury Collection</a></li>
+                        <li><a href="#">Last Minute</a></li>
                     </ul>
                 </div>
 
-                <!-- COMPANY -->
                 <div class="footer-column">
                     <h3>Company</h3>
-
                     <ul>
-                        <li>
-                            <a href="#">About Us</a>
-                        </li>
-
-                        <li>
-                            <a href="#">Blog</a>
-                        </li>
-
-                        <li>
-                            <a href="#">Careers</a>
-                        </li>
-
-                        <li>
-                            <a href="#">Press</a>
-                        </li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
                     </ul>
                 </div>
 
-                <!-- SUPPORT -->
                 <div class="footer-column">
                     <h3>Support</h3>
-
                     <ul>
-                        <li>
-                            <a href="#">Help Centre</a>
-                        </li>
-
-                        <li>
-                            <a href="#">
-                                Cancellation Policy
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#">Safety</a>
-                        </li>
-
-                        <li>
-                            <a href="#">Contact</a>
-                        </li>
+                        <li><a href="#">Help Centre</a></li>
+                        <li><a href="#">Cancellation Policy</a></li>
+                        <li><a href="#">Safety</a></li>
+                        <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
+
             </div>
 
-            <!-- FOOTER BOTTOM -->
             <div class="footer-bottom">
-                <p>
-                    © 2026 Holidayze. All rights reserved.
-                </p>
+                <p>© 2026 Holidayze. All rights reserved.</p>
 
                 <div class="footer-bottom-links">
                     <a href="#">Privacy Policy</a>
-
                     <a href="#">Terms of Service</a>
                 </div>
             </div>
+
         </div>
     </footer>
+
+    <!-- CONNECT TO API -->
+    <script type="module" src="./js/index.js"></script>
+
 </body>
 
 </html>

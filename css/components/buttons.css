@@ -11,11 +11,16 @@
   text-decoration: none;
 
   transition:
-    transform var(--transition-medium),
     background var(--transition-medium),
-    opacity var(--transition-medium);
+    color var(--transition-medium),
+    border-color var(--transition-medium),
+    transform var(--transition-medium);
 
   font: inherit;
+
+  font-size: 0.95rem;
+
+  font-weight: 500;
 }
 
 .btn-primary {
@@ -23,17 +28,35 @@
 
   color: #111;
 
-  padding: 1rem 1.8rem;
+  padding: 0.7rem 1.4rem;
 
-  border-radius: 999px;
+  border-radius: 16px;
 
-  font-weight: 600;
-
-  min-height: 48px;
+  min-height: 42px;
 }
 
 .btn-primary:hover {
   background: var(--color-gold-hover);
 
-  transform: translateY(-2px);
+  transform: translateY(-1px);
+}
+
+.btn-outline {
+  background: transparent;
+
+  color: var(--color-text);
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  padding: 0.7rem 1.2rem;
+
+  border-radius: 16px;
+
+  min-height: 42px;
+}
+
+.btn-outline:hover {
+  border-color: rgba(255, 255, 255, 0.25);
+
+  background: rgba(255, 255, 255, 0.03);
 }
