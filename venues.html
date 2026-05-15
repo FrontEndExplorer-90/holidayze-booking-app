@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Venues | Holidaze</title>
+
+  <meta name="description"
+    content="Browse luxury venues and cinematic escapes with Holidaze." />
+
+  <!-- GLOBAL CSS -->
+  <link rel="stylesheet" href="./css/styles.css" />
+
+  <!-- VENUES PAGE CSS -->
+  <link rel="stylesheet" href="./css/venues.css" />
+</head>
+
+<body>
+
+  <!-- =========================
+       HEADER
+  ========================== -->
+
+  <header class="site-header">
+
+    <div class="navbar">
+
+      <a href="index.html" class="logo">
+        HOLIDAYZE
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="venues.html">Venues</a></li>
+          <li><a href="#">Destinations</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="login.html" class="btn btn-outline">Log in</a>
+        <a href="register.html" class="btn btn-primary">Register</a>
+      </div>
+
+    </div>
+
+  </header>
+
+  <!-- =========================
+       MAIN
+  ========================== -->
+
+  <main class="venues-page">
+
+    <!-- HERO -->
+    <section class="venues-hero">
+
+      <div class="venues-hero-overlay"></div>
+
+      <img
+        src="https://i.postimg.cc/MGpB4T77/Chat-GPT-Image-May-15-2026-12-49-19-PM.webp"
+        alt="Luxury destination" />
+
+      <div class="venues-hero-content">
+        <p class="venues-kicker">✦ Curated Luxury Escapes</p>
+
+        <h1>Discover Extraordinary Destinations</h1>
+
+        <p class="venues-description">
+          Handpicked luxury venues crafted for unforgettable
+          journeys around the world.
+        </p>
+      </div>
+
+    </section>
+
+    <!-- FILTERS -->
+    <section class="venues-filters">
+
+      <div class="filter-bar">
+
+        <input type="text" placeholder="Search destination..." />
+
+        <select>
+          <option>Guests</option>
+          <option>2 Guests</option>
+          <option>4 Guests</option>
+          <option>6 Guests</option>
+        </select>
+
+        <select>
+          <option>Price Range</option>
+          <option>$200 - $500</option>
+          <option>$500 - $1000</option>
+          <option>$1000+</option>
+        </select>
+
+        <button class="btn btn-primary">
+          Explore
+        </button>
+
+      </div>
+
+    </section>
+
+    <!-- DESTINATIONS -->
+    <section class="destination-section">
+
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">✦ Explore by Destination</p>
+          <h2 class="section-title">Featured Locations</h2>
+        </div>
+      </div>
+
+      <div class="destination-grid">
+
+        <div class="destination-card">
+          <img
+            src="https://i.postimg.cc/GmnTdvf3/Chat-GPT-Image-Apr-27-2026-02-01-03-PM.webp"
+            alt="Santorini" />
+          <div class="destination-overlay">
+            <h3>Santorini</h3>
+          </div>
+        </div>
+
+        <div class="destination-card">
+          <img
+            src="https://i.postimg.cc/cL7gHrqW/Chat-GPT-Image-Apr-27-2026-04-32-42-PM.webp"
+            alt="Kyoto" />
+          <div class="destination-overlay">
+            <h3>Kyoto</h3>
+          </div>
+        </div>
+
+        <div class="destination-card">
+          <img
+            src="https://i.postimg.cc/kgN64Brm/Chat-GPT-Image-Apr-27-2026-04-24-13-PM.webp"
+            alt="Dubai" />
+          <div class="destination-overlay">
+            <h3>Dubai</h3>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- VENUES GRID (🔥 NOW DYNAMIC) -->
+    <section class="venues-grid-section">
+
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">✦ Handpicked Collection</p>
+          <h2 class="section-title">Luxury Venues</h2>
+        </div>
+      </div>
+
+      <!-- ✅ THIS IS WHERE API CONTENT GOES -->
+      <div id="venues-container" class="featured-grid"></div>
+
+    </section>
+
+  </main>
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
+  <footer class="site-footer">
+
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <h2>HOLIDAYZE</h2>
+          <p>
+            Crafting extraordinary stays for discerning
+            travellers around the world.
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="#">All Venues</a></li>
+            <li><a href="#">Destinations</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <!-- SCRIPT -->
+  <script type="module" src="./js/venues.js"></script>
+
+</body>
+
+</html>

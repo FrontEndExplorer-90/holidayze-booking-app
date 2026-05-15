@@ -8,6 +8,10 @@
 @import url("./components/stats.css");
 @import url("./components/footer.css");
 @import url("./components/buttons.css");
+@import url("./components/booking-card.css");
+@import url("./components/amenities.css");
+@import url("./components/reviews.css");
+
 
 /* =========================
    GLOBAL RESET

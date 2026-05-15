@@ -1,0 +1,233 @@
+/* =========================
+   VENUES PAGE
+========================= */
+
+.venues-page {
+  background: #0b0b0d;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.venues-hero {
+  position: relative;
+
+  height: 70vh;
+
+  overflow: hidden;
+}
+
+.venues-hero img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.venues-hero-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(11, 11, 13, 1),
+      rgba(11, 11, 13, 0.3)
+    );
+
+  z-index: 1;
+}
+
+.venues-hero-content {
+  position: absolute;
+
+  bottom: 5rem;
+  left: 5rem;
+
+  max-width: 700px;
+
+  z-index: 2;
+}
+
+.venues-kicker {
+  color: var(--color-gold);
+
+  text-transform: uppercase;
+
+  letter-spacing: 2px;
+
+  margin-bottom: 1rem;
+}
+
+.venues-hero-content h1 {
+  font-family: var(--font-heading);
+
+  font-size: clamp(3rem, 6vw, 5rem);
+
+  line-height: 1;
+
+  margin-bottom: 1.5rem;
+}
+
+.venues-description {
+  color: var(--color-text-muted);
+
+  line-height: 1.8;
+
+  max-width: 600px;
+}
+
+/* =========================
+   FILTERS
+========================= */
+
+.venues-filters {
+  width: min(1400px, 92%);
+
+  margin: -3rem auto 5rem;
+
+  position: relative;
+
+  z-index: 10;
+}
+
+.filter-bar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 1rem;
+
+  padding: 2rem;
+
+  border-radius: 28px;
+
+  background: rgba(18, 18, 20, 0.95);
+
+  border: 1px solid rgba(255, 255, 255, 0.05);
+
+  backdrop-filter: blur(20px);
+}
+
+.filter-bar input,
+.filter-bar select {
+  height: 60px;
+
+  border: none;
+
+  border-radius: 18px;
+
+  padding: 0 1rem;
+
+  background: rgba(255, 255, 255, 0.04);
+
+  color: var(--color-text);
+}
+
+/* =========================
+   DESTINATIONS
+========================= */
+
+.destination-section {
+  width: min(1400px, 92%);
+
+  margin: 0 auto 6rem;
+}
+
+.destination-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 2rem;
+
+  margin-top: 3rem;
+}
+
+.destination-card {
+  position: relative;
+
+  height: 420px;
+
+  overflow: hidden;
+
+  border-radius: 28px;
+}
+
+.destination-card img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: transform var(--transition-medium);
+}
+
+.destination-card:hover img {
+  transform: scale(1.05);
+}
+
+.destination-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  display: flex;
+  align-items: flex-end;
+
+  padding: 2rem;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.7),
+      transparent
+    );
+}
+
+.destination-overlay h3 {
+  font-family: var(--font-heading);
+
+  font-size: 2rem;
+}
+
+/* =========================
+   VENUE GRID SECTION
+========================= */
+
+.venues-grid-section {
+  width: min(1400px, 92%);
+
+  margin: 0 auto 8rem;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1100px) {
+
+  .filter-bar {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .destination-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .venues-hero {
+    height: 60vh;
+  }
+
+  .venues-hero-content {
+    left: 2rem;
+    bottom: 3rem;
+  }
+
+  .filter-bar {
+    grid-template-columns: 1fr;
+  }
+}
