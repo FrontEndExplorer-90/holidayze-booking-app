@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap");
 
 @import url("./variables.css");
 
@@ -147,18 +147,18 @@ a {
   background:
     linear-gradient(
       to right,
-      rgba(15, 15, 16, 0.92),
-      rgba(15, 15, 16, 0.45)
+      rgba(15, 15, 16, 0.72),
+      rgba(15, 15, 16, 0.30)
     ),
-    url("https://i.postimg.cc/Mp0MTvkW/Chat-GPT-Image-Apr-27-2026-02-41-00-PM.webp")
-      center/cover;
-
+    url("https://i.postimg.cc/bJdDFVnz/Chat-GPT-Image-May-11-2026-06-17-36-PM1.webp");
 
   background-position: center;
 
-  background-size: 100%;
+  background-size: cover;
 
   background-repeat: no-repeat;
+
+  transform: scale(1.00);
 
   z-index: -2;
 }
